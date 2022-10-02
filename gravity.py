@@ -13,7 +13,7 @@ class GravityManager:
 
     def fallSpeed(self):
         if self._is_falling:
-            self.accel += 9.81
+            self.accel += GRAVITY_FORCE
             return self.accel
         else:
             return 0
